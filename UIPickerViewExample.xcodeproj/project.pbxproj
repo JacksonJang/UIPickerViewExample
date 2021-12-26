@@ -13,6 +13,11 @@
 		E298B59327774478007BD798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E298B59127774478007BD798 /* Main.storyboard */; };
 		E298B59527774479007BD798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E298B59427774479007BD798 /* Assets.xcassets */; };
 		E298B59827774479007BD798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E298B59627774479007BD798 /* LaunchScreen.storyboard */; };
+		E298B5A32778A6BD007BD798 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298B5A22778A6BD007BD798 /* MainTableViewCell.swift */; };
+		E298B5A52778A713007BD798 /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298B5A42778A713007BD798 /* CustomPickerView.swift */; };
+		E298B5A72778A732007BD798 /* CustomPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E298B5A62778A732007BD798 /* CustomPickerView.xib */; };
+		E298B5A92778A948007BD798 /* CustomDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298B5A82778A948007BD798 /* CustomDatePickerView.swift */; };
+		E298B5AB2778A95C007BD798 /* CustomDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E298B5AA2778A95C007BD798 /* CustomDatePickerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		E298B59427774479007BD798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E298B59727774479007BD798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E298B59927774479007BD798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E298B5A22778A6BD007BD798 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		E298B5A42778A713007BD798 /* CustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
+		E298B5A62778A732007BD798 /* CustomPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPickerView.xib; sourceTree = "<group>"; };
+		E298B5A82778A948007BD798 /* CustomDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePickerView.swift; sourceTree = "<group>"; };
+		E298B5AA2778A95C007BD798 /* CustomDatePickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomDatePickerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,9 @@
 		E298B58A27774478007BD798 /* UIPickerViewExample */ = {
 			isa = PBXGroup;
 			children = (
+				E298B5A02778A683007BD798 /* UIPickerView */,
+				E298B5A12778A689007BD798 /* UIDatePickerView */,
+				E298B59F2778A67B007BD798 /* TableView */,
 				E298B58B27774478007BD798 /* AppDelegate.swift */,
 				E298B58D27774478007BD798 /* SceneDelegate.swift */,
 				E298B58F27774478007BD798 /* ViewController.swift */,
@@ -65,6 +78,32 @@
 				E298B59927774479007BD798 /* Info.plist */,
 			);
 			path = UIPickerViewExample;
+			sourceTree = "<group>";
+		};
+		E298B59F2778A67B007BD798 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				E298B5A22778A6BD007BD798 /* MainTableViewCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		E298B5A02778A683007BD798 /* UIPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				E298B5A42778A713007BD798 /* CustomPickerView.swift */,
+				E298B5A62778A732007BD798 /* CustomPickerView.xib */,
+			);
+			path = UIPickerView;
+			sourceTree = "<group>";
+		};
+		E298B5A12778A689007BD798 /* UIDatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				E298B5A82778A948007BD798 /* CustomDatePickerView.swift */,
+				E298B5AA2778A95C007BD798 /* CustomDatePickerView.xib */,
+			);
+			path = UIDatePickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +165,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E298B59827774479007BD798 /* LaunchScreen.storyboard in Resources */,
+				E298B5A72778A732007BD798 /* CustomPickerView.xib in Resources */,
 				E298B59527774479007BD798 /* Assets.xcassets in Resources */,
+				E298B5AB2778A95C007BD798 /* CustomDatePickerView.xib in Resources */,
 				E298B59327774478007BD798 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E298B59027774478007BD798 /* ViewController.swift in Sources */,
+				E298B5A52778A713007BD798 /* CustomPickerView.swift in Sources */,
 				E298B58C27774478007BD798 /* AppDelegate.swift in Sources */,
+				E298B5A32778A6BD007BD798 /* MainTableViewCell.swift in Sources */,
 				E298B58E27774478007BD798 /* SceneDelegate.swift in Sources */,
+				E298B5A92778A948007BD798 /* CustomDatePickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
