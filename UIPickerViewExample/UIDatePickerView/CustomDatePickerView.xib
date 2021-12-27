@@ -17,9 +17,117 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AvV-LE-r5H">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMa-0W-oE4">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Automatic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29a-xx-jw6">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="O3X-3n-nE7">
+                                    <rect key="frame" x="0.0" y="21" width="414" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="ZkO-im-0G8"/>
+                                    </constraints>
+                                    <locale key="locale" localeIdentifier="ko_KR"/>
+                                </datePicker>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wheels" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaY-Gl-A4d">
+                                    <rect key="frame" x="0.0" y="221" width="414" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="kK3-iy-7eO">
+                                    <rect key="frame" x="0.0" y="242" width="414" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="cuV-SF-YkW"/>
+                                    </constraints>
+                                    <locale key="locale" localeIdentifier="ko_KR"/>
+                                </datePicker>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ma-5a-71P">
+                                    <rect key="frame" x="0.0" y="442" width="414" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="kgK-4F-EkN">
+                                    <rect key="frame" x="0.0" y="463" width="414" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="9AV-IV-kWf"/>
+                                    </constraints>
+                                    <locale key="locale" localeIdentifier="ko_KR"/>
+                                </datePicker>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="inline" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1k-Ab-yhS">
+                                    <rect key="frame" x="0.0" y="663" width="414" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="fSN-Wf-uEC">
+                                    <rect key="frame" x="0.0" y="684" width="414" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="oa9-xf-B16"/>
+                                    </constraints>
+                                    <locale key="locale" localeIdentifier="ko_KR"/>
+                                </datePicker>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="fSN-Wf-uEC" firstAttribute="top" secondItem="p1k-Ab-yhS" secondAttribute="bottom" id="1Lz-uj-w6Y"/>
+                                <constraint firstItem="p1k-Ab-yhS" firstAttribute="top" secondItem="kgK-4F-EkN" secondAttribute="bottom" id="3JH-oj-rQj"/>
+                                <constraint firstItem="kgK-4F-EkN" firstAttribute="leading" secondItem="XMa-0W-oE4" secondAttribute="leading" id="3tO-Vj-svt"/>
+                                <constraint firstAttribute="trailing" secondItem="gaY-Gl-A4d" secondAttribute="trailing" id="98J-UO-Dg4"/>
+                                <constraint firstAttribute="trailing" secondItem="29a-xx-jw6" secondAttribute="trailing" id="ASi-bk-NzJ"/>
+                                <constraint firstItem="p1k-Ab-yhS" firstAttribute="leading" secondItem="XMa-0W-oE4" secondAttribute="leading" id="CDa-LS-fp6"/>
+                                <constraint firstItem="kK3-iy-7eO" firstAttribute="leading" secondItem="XMa-0W-oE4" secondAttribute="leading" id="CrZ-tU-R45"/>
+                                <constraint firstAttribute="trailing" secondItem="fSN-Wf-uEC" secondAttribute="trailing" id="DAp-gy-aRh"/>
+                                <constraint firstItem="O3X-3n-nE7" firstAttribute="top" secondItem="29a-xx-jw6" secondAttribute="bottom" id="FwM-f9-GLf"/>
+                                <constraint firstAttribute="trailing" secondItem="p1k-Ab-yhS" secondAttribute="trailing" id="G1B-ya-2Nh"/>
+                                <constraint firstAttribute="trailing" secondItem="O3X-3n-nE7" secondAttribute="trailing" id="HtV-D7-Wzl"/>
+                                <constraint firstAttribute="trailing" secondItem="kgK-4F-EkN" secondAttribute="trailing" id="IA3-S6-paB"/>
+                                <constraint firstItem="gaY-Gl-A4d" firstAttribute="leading" secondItem="XMa-0W-oE4" secondAttribute="leading" id="LjQ-UK-quo"/>
+                                <constraint firstItem="kgK-4F-EkN" firstAttribute="top" secondItem="9Ma-5a-71P" secondAttribute="bottom" id="V0n-XP-6fb"/>
+                                <constraint firstItem="gaY-Gl-A4d" firstAttribute="top" secondItem="O3X-3n-nE7" secondAttribute="bottom" id="ZBQ-bt-DWN"/>
+                                <constraint firstItem="fSN-Wf-uEC" firstAttribute="leading" secondItem="XMa-0W-oE4" secondAttribute="leading" id="b3b-B9-Yax"/>
+                                <constraint firstItem="9Ma-5a-71P" firstAttribute="top" secondItem="kK3-iy-7eO" secondAttribute="bottom" id="cSy-yJ-NjH"/>
+                                <constraint firstItem="9Ma-5a-71P" firstAttribute="leading" secondItem="XMa-0W-oE4" secondAttribute="leading" id="i8J-DS-1n9"/>
+                                <constraint firstItem="fSN-Wf-uEC" firstAttribute="top" secondItem="p1k-Ab-yhS" secondAttribute="bottom" id="jRg-eW-eiX"/>
+                                <constraint firstItem="fSN-Wf-uEC" firstAttribute="top" secondItem="p1k-Ab-yhS" secondAttribute="bottom" id="kVL-Su-z0b"/>
+                                <constraint firstAttribute="trailing" secondItem="kK3-iy-7eO" secondAttribute="trailing" id="lE6-Wt-zhc"/>
+                                <constraint firstItem="kgK-4F-EkN" firstAttribute="top" secondItem="9Ma-5a-71P" secondAttribute="bottom" id="o5f-5x-K1q"/>
+                                <constraint firstItem="29a-xx-jw6" firstAttribute="leading" secondItem="XMa-0W-oE4" secondAttribute="leading" id="oHQ-1b-Ti9"/>
+                                <constraint firstItem="O3X-3n-nE7" firstAttribute="leading" secondItem="XMa-0W-oE4" secondAttribute="leading" id="t7M-cz-FgM"/>
+                                <constraint firstAttribute="height" constant="1200" id="tX5-bN-rkQ"/>
+                                <constraint firstItem="kK3-iy-7eO" firstAttribute="top" secondItem="gaY-Gl-A4d" secondAttribute="bottom" id="vB4-Wg-6py"/>
+                                <constraint firstAttribute="trailing" secondItem="9Ma-5a-71P" secondAttribute="trailing" id="yYw-Y6-85t"/>
+                                <constraint firstItem="29a-xx-jw6" firstAttribute="top" secondItem="XMa-0W-oE4" secondAttribute="top" id="z6y-TU-nax"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="XMa-0W-oE4" secondAttribute="width" id="E6y-bk-bV0"/>
+                        <constraint firstItem="XMa-0W-oE4" firstAttribute="leading" secondItem="AvV-LE-r5H" secondAttribute="leading" id="Fna-0w-u0o"/>
+                        <constraint firstItem="XMa-0W-oE4" firstAttribute="top" secondItem="AvV-LE-r5H" secondAttribute="top" id="IYW-PM-2bs"/>
+                        <constraint firstAttribute="bottom" secondItem="XMa-0W-oE4" secondAttribute="bottom" id="qOr-eN-wCA"/>
+                        <constraint firstAttribute="trailing" secondItem="XMa-0W-oE4" secondAttribute="trailing" id="wTa-Fd-e9x"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="139" y="106"/>
+            <constraints>
+                <constraint firstItem="AvV-LE-r5H" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="562-Ns-JpR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="AvV-LE-r5H" secondAttribute="bottom" id="JX6-cJ-gXH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AvV-LE-r5H" secondAttribute="trailing" id="LA5-Is-zn0"/>
+                <constraint firstItem="AvV-LE-r5H" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="xBr-UX-3Ok"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
         </view>
     </objects>
     <resources>
